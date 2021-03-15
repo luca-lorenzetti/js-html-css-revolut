@@ -13,3 +13,51 @@
     display: table;
 }
 /*********************/
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+ul{
+    list-style: none;
+}
+
+.container > ul > li{
+    display: inline-block;
+    margin: 0 20px;
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: rgb(139, 149, 158);
+    font-weight: bold;
+    padding: 10px;
+}
+
+a:focus{
+    color: #191c1f;
+}
+a:hover{
+    color: #191c1f;
+}
+.drop-down{
+    position: absolute;
+    box-shadow: 2px 2px rgba(39, 39, 39, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    display: none;
+}
+.drop-down li {
+    padding: 10px 0;
+}
+.active{
+    display: block;
+}
