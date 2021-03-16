@@ -14,22 +14,43 @@
 }
 /*********************/
 
+body{
+    font-size: 20px;
+}
 .container{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 100vh;
+    width: 90vw;
+    margin: 0 auto;
 }
-
-
+/* Regole menu left a right */
+.menu-left,.menu-right{
+    width: 50%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+.menu-left{
+    justify-content: flex-start;
+}
+.menu-right{
+    justify-content: flex-end;
+}
+.menu-left > ul, .menu-right > ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
 ul{
     list-style: none;
 }
-
-.container > ul > li{
+.menu-left > ul > li,.menu-right > ul > li{
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 10px;
     padding: 10px;
+    height: 100%;
 }
 a{
     text-decoration: none;
@@ -38,6 +59,15 @@ a{
     padding: 10px;
 }
 
+/* Logo */
+.menu-left li {
+    text-align: right;
+}
+img{
+    width: 50%;
+}
+
+/* /Regole menu left a right */
 a:focus{
     color: #191c1f;
 }
@@ -56,8 +86,34 @@ a:hover{
     display: none;
 }
 .drop-down li {
-    padding: 10px 0;
+    padding: 12px 0;
 }
 .active{
     display: block;
+}
+
+/* Bottoni */
+.button{
+    padding: 10px 25px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+#sign{
+    background-color: rgba(230, 230, 230, 0.6);
+    color: #000;
+}
+#sign:hover{
+    background-color: rgba(230, 230, 230, 0.8);
+}
+#getApp{
+    background-color: rgba(0,0,0,1);
+    color: #fff;
+}
+#getApp:hover{
+    background-color: rgba(0,0,0,0.7);
+    color: #fff;
 }
